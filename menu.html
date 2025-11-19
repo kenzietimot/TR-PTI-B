@@ -2,113 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="menu.css">
 <title>Menu</title>
 <style>
-    body {
-        margin: 0;
-        font-family: 'Poppins', sans-serif;
-        background: #fff9e6;
-        color: #333;
-    }
-
-    header {
-        position: fixed;
-        top: 0;
-        width: 93%;
-        background: #ffc400;
-        padding: 5px 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: 0.3s;
-        z-index: 5;
-    }
-
-    header h1 {
-        color: #d32f2f;
-        font-size: 28px; 
-    }    
-
-    nav a {
-        margin-left: 20px;
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-    }
-
-    #menu {
-        padding-top: 120px;
-        width: 85%;
-        margin: auto;
-        text-align: center;
-    }
-
-    #menu h3 {
-        font-size: 28px;
-        margin-bottom: 25px;
-    }
-
-    .menu-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 30px;
-    }
-
-    .menu-item {
-        background: #fff;
-        border-radius: 12px;
-        padding: 15px;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-        transition: 0.2s;
-    }
-
-    .menu-item:hover {
-        transform: translateY(-5px);
-    }
-
-    .menu-item img {
-        width: 100%;
-        height: 180px;
-        object-fit: cover;
-        border-radius: 10px;
-        margin-bottom: 10px;
-    }
-
-    .menu-item h4 {
-        margin: 10px 0 5px;
-        font-size: 20px;
-    }
-
-    .menu-item p {
-        margin: 5px 0 10px;
-        font-size: 17px;
-        color: #444;
-    }
-
-    .btn-pesan {
-        width: 100%;
-        padding: 15px;
-        background: #d62828;
-        color: white;
-        border: none;
-        font-size: 16px;
-        border-radius: 50px;
-        cursor: pointer;
-        font-weight: bold;
-    }
-
-    .btn-pesan:hover {
-        opacity: 0.85;
-    }
-
-    footer {
-        background-color: #ffcc00;
-        text-align: center;
-        padding: 15px;
-        font-weight: bold;
-        color: #333;
-    }
-
 </style>
 </head>
 <body>
@@ -130,112 +26,112 @@
             <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_960_720.jpg" alt="Beef Burger">
             <h4>Beef Burger</h4>
             <p>Rp 28.000</p>
-            <button class="btn-pesan" onclick="window.location.href='pemesanan.html'">Pesan Sekarang</button>
+            <button class="btn-pesan" onclick="window.location.href='order.html'">Pesan Sekarang</button>
         </div>
 
         <div class="menu-item">
             <img src="https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/S2b8K7g2tM6cDksrAdVv.webp" alt="Double Beef Burger">
             <h4>Double Beef Burger</h4>
             <p>Rp 43.000</p>
-            <button class="btn-pesan" onclick="window.location.href='pemesanan.html'">Pesan Sekarang</button>
+            <button class="btn-pesan" onclick="window.location.href='order.html'">Pesan Sekarang</button>
         </div>
 
         <div class="menu-item">
             <img src="https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/CSzGDTewk3JMiBAvWRxj.webp" alt="Kentang Goreng">
             <h4>Cheese Burger</h4>
             <p>Rp 29.999</p>
-            <button class="btn-pesan" onclick="window.location.href='pemesanan.html'">Pesan Sekarang</button>
+            <button class="btn-pesan" onclick="window.location.href='order.html'">Pesan Sekarang</button>
         </div>
 
         <div class="menu-item"> 
             <img src="https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/KS7GAjWZbpEZzChSyibz.webp" alt="Double Cheese Burger">
             <h4>Double Cheese Burger</h4>
             <p>Rp 49.999</p> 
-            <button class="btn-pesan" onclick="window.location.href='pemesanan.html'">Pesan Sekarang</button>
+            <button class="btn-pesan" onclick="window.location.href='order.html'">Pesan Sekarang</button>
         </div>
 
         <div class="menu-item">
             <img src="https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/Mo8OTCSNqjJ98BmPBhR5.webp" alt="Fish Burger">
             <h4>Fish Burgir</h4>
             <p>Rp 26.000</p>
-            <button class="btn-pesan" onclick="window.location.href='pemesanan.html'">Pesan Sekarang</button>
+            <button class="btn-pesan" onclick="window.location.href='order.html'">Pesan Sekarang</button>
         </div>
 
         <div class="menu-item">
             <img src="https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/oFmaq8K5ZygDUbtdulJL.webp" alt="Chiken Burger">
             <h4>Chiken Burgir</h4>
             <p>Rp 23.000</p>
-            <button class="btn-pesan" onclick="window.location.href='pemesanan.html'">Pesan Sekarang</button>
+            <button class="btn-pesan" onclick="window.location.href='order.html'">Pesan Sekarang</button>
         </div>
 
         <div class="menu-item">
             <img src="https://d2vuyvo9qdtgo9.cloudfront.net/foods/November2023/3t5navlXGbepANigzlmu.webp" alt="Fries">
             <h4>Fries</h4>
             <p>Rp 13.000</p>
-            <button class="btn-pesan" onclick="window.location.href='pemesanan.html'">Pesan Sekarang</button>
+            <button class="btn-pesan" onclick="window.location.href='order.html'">Pesan Sekarang</button>
         </div>
 
         <div class="menu-item">
             <img src="https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/ce7g1MMi3D7YNWGH3iuK.webp" alt="Nuggets">
             <h4>4 Piece Nuggets</h4>
             <p>Rp 17.000</p>
-            <button class="btn-pesan" onclick="window.location.href='pemesanan.html'">Pesan Sekarang</button>
+            <button class="btn-pesan" onclick="window.location.href='order.html'">Pesan Sekarang</button>
         </div>
 
         <div class="menu-item">
             <img src="https://s7d1.scene7.com/is/image/mcdonalds/DC_202105_3429_SweetTea_Glass_A1_1564x1564-1:nutrition-calculator-tile" alt="Sweet Tea">
             <h4>Sweet Tea</h4>
             <p>Rp 15.000</p>
-            <button class="btn-pesan" onclick="window.location.href='pemesanan.html'">Pesan Sekarang</button>
+            <button class="btn-pesan" onclick="window.location.href='order.html'">Pesan Sekarang</button>
         </div>
 
         <div class="menu-item">
             <img src="https://s7d1.scene7.com/is/image/mcdonalds/DC_202302_14878_MediumLemonade_1564x1564-2:nutrition-calculator-tile" alt="Lemonade">
             <h4>Lemonade</h4>
             <p>Rp 17.000</p>
-            <button class="btn-pesan" onclick="window.location.href='pemesanan.html'">Pesan Sekarang</button>
+            <button class="btn-pesan" onclick="window.location.href='order.html'">Pesan Sekarang</button>
         </div>
 
         <div class="menu-item">
             <img src="https://s7d1.scene7.com/is/image/mcdonalds/DC_202402_0521_MediumCoke_ContourGlassv1_1564x1564:nutrition-calculator-tile" alt="Cola">
             <h4>Coca-Cola</h4>
             <p>Rp 19.000</p>
-            <button class="btn-pesan" onclick="window.location.href='pemesanan.html'">Pesan Sekarang</button>
+            <button class="btn-pesan" onclick="window.location.href='order.html'">Pesan Sekarang</button>
         </div>
 
         <div class="menu-item">
             <img src="https://s7d1.scene7.com/is/image/mcdonalds/DC_202112_0652_MediumDietCoke_Glass_1564x1564-1:nutrition-calculator-tile" alt="Diet Coke">
             <h4>Diet Coke</h4>
             <p>Rp 21.000</p>
-            <button class="btn-pesan" onclick="window.location.href='pemesanan.html'">Pesan Sekarang</button>
+            <button class="btn-pesan" onclick="window.location.href='order.html'">Pesan Sekarang</button>
         </div>
         
         <div class="menu-item">
             <img src="https://cdn.pixabay.com/photo/2024/11/30/17/11/ai-generated-9235342_640.jpg" alt="Chocolate">
             <h4>Chocolate Shake</h4>
             <p>Rp 25.000</p>
-            <button class="btn-pesan" onclick="window.location.href='pemesanan.html'">Pesan Sekarang</button>
+            <button class="btn-pesan" onclick="window.location.href='order.html'">Pesan Sekarang</button>
         </div>
 
         <div class="menu-item">
             <img src="https://cdn.pixabay.com/photo/2024/11/30/17/11/ai-generated-9235341_640.jpg" alt="Vanilla">
             <h4>Vanilla Shake</h4>
             <p>Rp 25.000</p>
-            <button class="btn-pesan" onclick="window.location.href='pemesanan.html'">Pesan Sekarang</button>
+            <button class="btn-pesan" onclick="window.location.href='order.html'">Pesan Sekarang</button>
         </div>
 
         <div class="menu-item">
             <img src="https://cdn.pixabay.com/photo/2023/05/15/13/03/ice-coffee-7995033_640.jpg" alt="Americano">
             <h4>Americano/h4>
             <p>Rp 18.000</p>
-            <button class="btn-pesan" onclick="window.location.href='pemesanan.html'">Pesan Sekarang</button>
+            <button class="btn-pesan" onclick="window.location.href='order.html'">Pesan Sekarang</button>
         </div>
 
         <div class="menu-item">
             <img src="https://cdn.pixabay.com/photo/2025/07/10/18/26/coffee-9707270_640.jpg" alt="Cappuccino">
             <h4>Cappuccino</h4>
             <p>Rp 21.000</p>
-            <button class="btn-pesan" onclick="window.location.href='pemesanan.html'">Pesan Sekarang</button>
+            <button class="btn-pesan" onclick="window.location.href='order.html'">Pesan Sekarang</button>
         </div>
 
     </div>
