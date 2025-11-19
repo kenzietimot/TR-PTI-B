@@ -48,3 +48,70 @@ table {
 	border-spacing: 0;
 }
 /* Main CSS */
+p {
+	font-size: 18px;
+}
+.container {
+	font-family: 'Poppins', sans-serif;
+	background-color: #fff8e1;
+    color: #333;
+	box-sizing: border-box;
+	height: 100%;
+}
+.header {
+	background-color: #ffcc00;
+	max-width: 100%;
+	margin: auto;
+	display: flex;
+    padding: 0px 50px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	box-sizing: border-box;
+	font-weight: bold;
+	
+}
+.header .headertitle{
+	color: #d32f2f;
+    font-size: 28px;
+	padding: 20px;
+}
+.uppermain {
+	margin: auto;
+	box-sizing: border-box;
+	background-color: #fff3cd;
+}
+.uppercontainer {
+	padding: 10px 30px;
+	max-width: 70%;
+	display: flex;
+	margin: auto;
+	box-sizing: border-box;
+}
+.uppercontainer h1 {
+	padding-bottom: 30px;
+	color: #d32f2f;
+    font-size: 46px;
+	font-weight: bold;
+}
+.main1left{
+	order: 1;
+	float: left;
+	margin: auto;
+	padding: 60px 10px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.main1right{
+	order: 2;
+	float: right;
+	margin: auto;
+	padding: 60px 120px;
+	box-sizing: border-box;
+}
+.main1right img{
+	border-radius: 25px;
+	border-image: ;
+}
+
+.footer {
+	background-color: #333;
+}
