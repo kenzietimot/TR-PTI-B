@@ -161,18 +161,18 @@ a {
 	width: 100%;
 	height: auto;
 }
-.main1container {
+.menufavorit {
 	background-color: #fff8e1;
 	margin: auto;
 	height: auto;
 	width: 70%;
 	margin-top: 30px;
-	margin-bottom: 0px;
+	margin-bottom: 30px;
 }
-.main1container h1 {
+.menufavorit h1 {
 	padding-bottom: 30px;
 	color: black	;
-   font-size: 40px;
+   	font-size: 40px;
 	font-weight: bolder;
 	text-align: center;
 }
@@ -181,12 +181,48 @@ a {
    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
    gap: 30px;
 }
+.menulist a {
+    color: black;
+}
 .menuitem {
    background: #fff;
    border-radius: 12px;
    padding: 15px;
    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
    transition: 0.2s;
+   width: auto;
+   text-align: center;
+}
+.menuitem .button {
+	margin-top: 10px;
+	background-color: #d32f2f;
+	padding: 16px;
+	border-radius: 20px;
+	box-sizing: border-box;
+	transition: 0.3s;
+}
+.menuitem .button p {
+	color: white;
+	font-weight: bold;
+}
+.menuitem:hover {
+    transform: translateY(-5px);
+	transition: 0.3s;
+}
+.menuitem:active{
+	transform: scale(1.1);
+	transition: 0.3s;
+}
+.menuitem .button:active{
+	transition: 0.3s;
+	background-color: #e84a4a;
+}
+.menuitem img {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0px;
 }
 .footer {
 	background-color: #ffcc00;
