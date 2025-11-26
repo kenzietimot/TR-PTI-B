@@ -21,6 +21,7 @@
   <section class="order-wrap">
     <div class="order-card">
       <h2>Pesanan Anda</h2>
+      <form action="">
 
       <div class="order-input">
         <label class="order-label">Pilih Menu:</label>
@@ -57,8 +58,10 @@
         <option>e-Wallet</option>
       </select>
 
-      <button class="btn-action primary" onclick="pesanBerhasil()">Bayar</button>
-      <button class="btn-action secondary" onclick="alert('Form telah direset!')">Reset</button>
+      
+      <button type="submit" class="btn-action primary" onclick="pesanBerhasil()">Bayar</button>
+      <button type="reset" class="btn-action secondary" onclick="alert('Form telah direset!')">Reset</button>
+      </form>
     </div>
   </section>
 
