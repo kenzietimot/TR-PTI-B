@@ -73,3 +73,28 @@ body {
     .secondary:hover {
       background: #b3b3b3;
     }
+header {
+        position: fixed;
+        top: 0;
+        width: 93%;
+        background: #ffc400;
+        padding: 5px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.3s;
+        z-index: 5;
+    }
+
+    header h1 {
+        color: #d32f2f;
+        font-size: 28px; 
+    }    
+
+    nav a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+
