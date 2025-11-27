@@ -1,3 +1,5 @@
+/* CSS RESET */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -60,59 +62,64 @@ a {
 	box-sizing: border-box;
 	height: 100%;
 }
+/* Header */
 .header {
-	background-color: #ffcc00;
+	position: fixed;
+	z-index: 5;
+	background-color: #ffc400;
 	width: 100%;
 	margin: auto;
-	display: grid;
-    padding: 10px 50px 0px 50px;
+	display: flex;	
+    padding: 0px 35px;
 	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 	box-sizing: border-box;
 	font-weight: bold;
-	grid-template-columns: 50% 50%;
+	justify-content: space-between;
 }
-.header .headertitle{
+.header h1{
 	color: #d32f2f;
-    font-size: 28px;
-	padding: 10px 20px;
-	display: inline-block;
+   	font-size: 28px;
+	padding: 30px 20px;
+	font-weight:1000;
 }
-.headerchoice {
-
-}
-.headerchoice ul{
-	float: right;
+.header ul{
 	box-sizing: border-box;
+	display: flex;
 	margin-left: 20px;
-	display: inline-block;
+	padding-top: 0px;
 }
-.headerchoice ul li {
-	padding: 15px 20px;
-	display: inline-flex;
+.header ul li {
 	transition: 0.3s;
+	padding: 35px 15px;
 }
-.headerchoice ul li p {
-	color:black;
+.header ul li p {
+	color:#333;
+	font-size: 17px;
+	font-weight: bold;
 }
-.headerchoice ul li:hover{
+.header ul li:hover{
 	background-color: #f7d653;
 	transition: 0.3s;
 }
-.headerchoice ul li:active{
+.header ul li:active{
 	background-color: #ffe16b;
 	transition: 0.3s;
 }
+
+/* main */
+
 .uppermain {
 	margin: auto;
 	box-sizing: border-box;
 	background-color: #fff3cd;
 }
 .uppercontainer {
-	padding: 10px 30px;
+	padding: 140px 30px 180px 30px;
 	max-width: 70%;
 	display: flex;
 	margin: auto;
 	box-sizing: border-box;
+	justify-content: space-between;
 }
 .uppercontainer h1 {
 	padding-bottom: 30px;
@@ -121,56 +128,36 @@ a {
 	font-weight: bolder;
 }
 .main1left{
-	order: 1;
 	display: inline-block;
 	margin: auto;
 	padding: 60px 30px;
 	text-align: center;
 	box-sizing: border-box;
 }
-.main1left .button {
-	margin-top: 30px;
-	background-color: #d32f2f;
-	padding: 20px;
-	border-radius: 20px;
-	box-sizing: border-box;
-	transition: 0.3s;
-}
-.main1left .button:hover{
-	transform: translateY(-5px);
-	transition: 0.3s;
-}
-.main1left .button:active{
-	transform: scale(1.1);
-	transition: 0.3s;
-	background-color: #e84a4a;
-}
 .main1left a {
 	color: white;
 	font-weight: bold;
 }
 .main1right{
-	order: 2;
 	display: inline-block;
 	margin: auto;
-	padding: 60px 120px;
+	padding: 20px 40px;
 	box-sizing: border-box;
 }
 .main1right img{
 	border-radius: 15px;
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 .menufavorit {
 	background-color: #fff8e1;
 	margin: auto;
 	height: auto;
 	width: 70%;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	padding: 80px 0px;
 }
 .menufavorit h1 {
-	padding-bottom: 30px;
+	padding-bottom: 60px;
 	color: black	;
    	font-size: 40px;
 	font-weight: bolder;
@@ -193,29 +180,9 @@ a {
    width: auto;
    text-align: center;
 }
-.menuitem .button {
-	margin-top: 10px;
-	background-color: #d32f2f;
-	padding: 16px;
-	border-radius: 20px;
-	box-sizing: border-box;
-	transition: 0.3s;
-}
-.menuitem .button p {
-	color: white;
+.menuitem .namaitem{
 	font-weight: bold;
-}
-.menuitem:hover {
-    transform: translateY(-5px);
-	transition: 0.3s;
-}
-.menuitem:active{
-	transform: scale(1.1);
-	transition: 0.3s;
-}
-.menuitem .button:active{
-	transition: 0.3s;
-	background-color: #e84a4a;
+	font-size: 20px;
 }
 .menuitem img {
     width: auto;
@@ -233,9 +200,55 @@ a {
 	box-sizing: border-box;
 }
 .footer h1 {
+	color: #333;
 	margin: auto;
 	text-align: center;
 	align-content: center;
 	font-weight: bold;
 	font-family: 'Poppins', sans-serif;
+}
+
+/* Interactive Stuff */
+/* 1. Button */
+
+#button {
+	margin-top: 20px;
+	background-color: #d32f2f;
+	padding: 16px;
+	border-radius: 50px;
+	box-sizing: border-box;
+	transition: 0.1s;
+}
+#button p {
+	color: white;
+	font-weight: bold;
+}
+#button:hover {
+   	transform: translateY(-2px);
+	transition: 0.1s;
+	opacity:0.85;
+}
+#button:active{
+	transform: scale(1.01);
+	transition: 0.1s;
+	background-color: #e84a4a;
+}
+/* Responsive CSS */
+@media screen and (max-width: 768px){
+
+	.uppercontainer {
+	padding: 140px 30px 180px 30px;
+	max-width: 100%;
+	display: flex;
+	margin: auto;
+	box-sizing: border-box;
+	justify-content: space-between;
+	}
+	.menufavorit {
+	background-color: #fff8e1;
+	margin: auto;
+	height: auto;
+	width: 90%;
+	padding: 80px 0px;
+}
 }
