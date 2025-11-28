@@ -19,6 +19,7 @@ body {
     .order-card h2 {
       margin-bottom: 15px;
       text-align: center;
+      color: #d32f2f;
     }
 
     .order-input {
@@ -28,7 +29,7 @@ body {
     .order-label {
       display: block;
       margin-top: 10px;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
       font-weight: bold;
     }
 
@@ -36,7 +37,7 @@ body {
     .order-input input {
       width: 100%;
       padding: 10px;
-      border-radius: 6px;
+      border-radius: 7px;
       border: 1px solid #888;
       font-size: 15px;
       margin-bottom: 10px;
@@ -55,16 +56,17 @@ body {
     }
 
     .primary {
-      background: #1a73e8;
+      background: #d32f2f;
       color: white;
     }
 
     .primary:hover {
-      background: #0c5bcc;
+      background: #ffc400;
     }
 
     .secondary {
-      background: #ccc;
+      background: #d32f2f;
+      color: white
     }
 
     .secondary:hover {
@@ -81,6 +83,7 @@ header {
         align-items: center;
         transition: 0.3s;
         z-index: 5;
+        text-align: center;
     }
 
     header h1 {
@@ -88,11 +91,12 @@ header {
         font-size: 28px; 
     }    
 
-    nav a {
-        margin-left: 20px;
-        text-decoration: none;
-        color: #333;
+   footer {
+        background-color: #ffcc00;
+        text-align: center;
+        padding:20px;
         font-weight: bold;
+        color: #333;
     }
 
 
