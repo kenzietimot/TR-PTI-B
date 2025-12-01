@@ -16,7 +16,7 @@
     <main>
         <div class="form-pendaftaran">
             <h2>Form Pendaftaran</h2>
-            <form action="login.html" method="post">
+            <form action="login.html">
                 <label for="nama">Nama Lengkap:</label>
                 <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
 
@@ -24,12 +24,12 @@
                 <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat lengkap" required></textarea>
 
                 <label for="email">Email:</label>
-                <input id="email" name="email" placeholder="Masukan email Anda" required></input>
+                <input type="email" id="email" name="email" placeholder="Masukan email Anda" required>
 
-                <label for="menu">No. Telepon:</label>
-                <input id="number" name="number" placeholder="Masukan nomor telepon Anda" required></input>
+                <label for="nomor">No. Telepon:</label>
+                <input type="number" id="number" name="number" placeholder="Masukan nomor telepon Anda" required>
 
-                <button class="btn-submit" type="submit" href="login.html" onclick="location.href='login.html'">Daftar</button>
+                <button class="btn-submit" type="submit" onclick="location.href='login.html'">Daftar</button>
             </form>
             <a class="btn-back" href="login.html">Kembali</a>
         </div>
