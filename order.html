@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aplikasi Order</title>
    <link rel="stylesheet" href="styleorder.css">
-
-
 </head>
 
 <body>
@@ -25,7 +23,7 @@
 
       <div class="order-input">
         <label class="order-label">Pilih Menu:</label>
-        <select class="order-select">
+        <select class="order-select" required>
           <option selected disabled>Pilih Menu </option>
           <option>Beef Burger - Rp 28.000</option>
           <option>Double Beef Burger - Rp 43.000</option>
@@ -50,7 +48,7 @@
       </div>
 
       <label class="order-label">Metode Pembayaran:</label>
-      <select class="order-select">
+      <select class="order-select" required>
         <option selected disabled>Pilih Metode</option>
         <option>Cash</option>
         <option>QRIS</option>
@@ -58,18 +56,18 @@
         <option>e-Wallet</option>
       </select>
 
-      
-      <button type="submit" class="btn-action primary" onclick="pesanBerhasil()">Bayar</button>
-      <button type="reset" class="btn-action secondary" onclick="alert('Form telah direset!')">Reset</button>
+      <button type="submit" class="btn-action primary">Bayar</button>
+      <button type="reset" class="btn-action secondary">Reset</button>
       </form>
     </div>
   </section>
+
 <br>
 <br>
+
  <footer>
         © 2025 Me Burgir | Sukses Lancar Rezeki 
     </footer>
-
 
 </body>
 </html>
