@@ -4,77 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aplikasi Order</title>
-  <link rel="stylesheet" href="styleorder.css">
+   <link rel="stylesheet" href="styleorder.css">
+
+
 </head>
 
 <body>
   <header>
-    <div class="logo">
-      <h1><b>🍔 Me Burgir</b></h1>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
+    <div class="logo"><h1><b>🍔 Me Burgir</b></h1></div>
+       <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
     </nav>
-  </header>
+</header>
 
   <section class="order-wrap">
     <div class="order-card">
       <h2>Pesanan Anda</h2>
+      <form action="home.html">
 
-      <form onsubmit="pesanBerhasil(event)">
-        <div class="order-input">
-          <label class="order-label">Pilih Menu:</label>
-          <select class="order-select" required>
-            <option value="" selected disabled>Pilih Menu</option>
-            <option>Beef Burger - Rp 28.000</option>
-            <option>Double Beef Burger - Rp 43.000</option>
-            <option>Cheese Burger - Rp 29.999</option>
-            <option>Double Cheese Burger - Rp 49.999</option>
-            <option>Fish Burger - Rp 26.000</option>
-            <option>Chicken Burger - Rp 23.000</option>
-            <option>Fries - Rp 13.000</option>
-            <option>4 Piece Nuggets - Rp 17.000</option>
-            <option>Sweet Tea - Rp 15.000</option>
-            <option>Lemonade - Rp 17.000</option>
-            <option>Coca Cola - Rp 19.000</option>
-            <option>Diet Coke - Rp 21.000</option>
-            <option>Chocalate Shake - Rp 25.000</option>
-            <option>Vannila Shake - Rp 25.000</option>
-            <option>Americano - Rp 28.000</option>
-            <option>Cappucino - Rp 21.000</option>
-          </select>
-
-          <label class="order-label">Jumlah:</label>
-          <input class="order-select" type="number" min="1" placeholder="Masukkan Jumlah" required>
-        </div>
-
-        <label class="order-label">Metode Pembayaran:</label>
-        <select class="order-select" required>
-          <option value="" selected disabled>Pilih Metode</option>
-          <option>Cash</option>
-          <option>QRIS</option>
-          <option>Transfer</option>
-          <option>e-Wallet</option>
+      <div class="order-input">
+        <label class="order-label">Pilih Menu:</label>
+        <select class="order-select">
+          <option selected disabled>Pilih Menu</option>
+          <option>Beef Burger - Rp 28.000</option>
+          <option>Double Beef Burger - Rp 43.000</option>
+          <option>Cheese Burger - Rp 29.999</option>
+          <option>Double Cheese Burger - Rp 49.999</option>
+          <option>Fish Burger - Rp 26.000</option>
+          <option>Chicken Burger - Rp 23.000</option>
+          <option>Fries - Rp 13.000</option>
+          <option>4 Piece Nuggets - Rp 17.000</option>
+          <option>Sweet Tea - Rp 15.000</option>
+          <option>Lemonade - Rp 17.000</option>
+          <option>Coca Cola - Rp 19.000</option>
+          <option>Diet Coke - Rp 21.000</option>
+          <option>Chocalate Shake - Rp 25.000</option>
+          <option>Vannila Shake - Rp 25.000</option>
+          <option>Americano - Rp 28.000</option>
+          <option>Cappucino - Rp 21.000</option>
         </select>
 
-        <button type="submit" class="btn-action primary">Bayar</button>
-        <button type="reset" class="btn-action secondary" onclick="alert('Form telah direset!')">Reset</button>
+        <label class="order-label">Jumlah:</label>
+        <input class="order-select" type="number" min="1" placeholder="Masukkan Jumlah">
+      </div>
+
+      <label class="order-label">Metode Pembayaran:</label>
+      <select class="order-select">
+        <option selected disabled>Pilih Metode</option>
+        <option>Cash</option>
+        <option>QRIS</option>
+        <option>Transfer</option>
+        <option>e-Wallet</option>
+      </select>
+
+      
+      <button type="submit" class="btn-action primary" onclick="pesanBerhasil()">Bayar</button>
+      <button type="reset" class="btn-action secondary" onclick="alert('Form telah direset!')">Reset</button>
       </form>
     </div>
   </section>
-
-  <br><br>
-
-  <footer>
-    © 2025 Me Burgir | Sukses Lancar Rezeki
-  </footer>
+<br>
+<br>
+ <footer>
+        © 2025 Me Burgir | Sukses Lancar Rezeki 
+    </footer>
 
   <script>
-    function pesanBerhasil(event) {
-      event.preventDefault();
+    function pesanBerhasil() {
       alert("Pesanan berhasil dipesan!");
-      window.location.href = "menu.html";
+      window.location.href = "index.html";
     }
   </script>
 
