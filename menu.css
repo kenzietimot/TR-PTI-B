@@ -29,6 +29,11 @@
         color: #333;
         font-weight: bold;
     }
+    @media screen and (max-width: 415px) {
+        nav a {
+            margin-right: 20px;
+        }
+    }
 
     #menu {
         padding-top: 120px;
