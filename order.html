@@ -21,12 +21,12 @@
   <section class="order-wrap">
     <div class="order-card">
       <h2>Pesanan Anda</h2>
-      <form action="menu.html">
+      <form action="menu.html" method="post">
 
       <div class="order-input">
         <label class="order-label">Pilih Menu:</label>
         <select class="order-select">
-          <option selected disabled>Pilih Menu</option>
+          <option selected disabled>Pilih Menu </option>
           <option>Beef Burger - Rp 28.000</option>
           <option>Double Beef Burger - Rp 43.000</option>
           <option>Cheese Burger - Rp 29.999</option>
@@ -46,7 +46,7 @@
         </select>
 
         <label class="order-label">Jumlah:</label>
-        <input class="order-select" type="number" min="1" placeholder="Masukkan Jumlah">
+        <input class="order-select" type="number" min="1" placeholder="Masukkan Jumlah" required>
       </div>
 
       <label class="order-label">Metode Pembayaran:</label>
@@ -70,12 +70,6 @@
         © 2025 Me Burgir | Sukses Lancar Rezeki 
     </footer>
 
-  <script>
-    function pesanBerhasil() {
-      alert("Pesanan berhasil dipesan!");
-      window.location.href = "menu.html";
-    }
-  </script>
 
 </body>
 </html>
