@@ -4,16 +4,21 @@ body {
     background: #fff9e6;
     color: #333;
     padding-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .order-wrap {
-    width: 100%;
+    width: 93%;
     max-width: 750px;
     margin: 40px auto;
     background: white;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    flex: 1;
 }
 
 .order-card h2 {
@@ -76,7 +81,7 @@ body {
 header {
     position: fixed;
     top: 0;
-    width: 93%;
+    width: 100%;
     background: #ffc400;
     padding: 5px 60px;
     display: flex;
@@ -89,8 +94,8 @@ header {
 
 header h1 {
     color: #d32f2f;
-    font-size: 28px; 
-}   
+    font-size: 28px;
+}
 
 nav a {
     margin-left: 20px;
@@ -107,17 +112,13 @@ footer {
     color: #333;
 }
 
-
-
 @media (max-width: 768px) {
-
     body {
         padding-top: 80px;
     }
 
     header {
         padding: 10px 20px;
-        width: 100%;
         flex-direction: column;
     }
 
@@ -142,7 +143,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-
     body {
         padding-top: 75px;
     }
@@ -167,4 +167,3 @@ footer {
         padding: 16px;
     }
 }
-
