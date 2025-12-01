@@ -1,110 +1,169 @@
 body {
-        margin: 0;
-        font-family: 'Poppins', sans-serif;
-        background: #fff9e6;
-        color: #333;
-        padding-top: 100px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff9e6;
+    color: #333;
+    padding-top: 100px;
+}
+
+.order-wrap {
+    width: 90%;
+    max-width: 750px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+}
+
+.order-card h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #d32f2f;
+}
+
+.order-input {
+    margin-bottom: 15px;
+}
+
+.order-label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.order-select,
+.order-input input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #888;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-left: -5px;
+}
+
+.btn-action {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.primary {
+    background: #d32f2f;
+    color: white;
+}
+
+.primary:hover {
+    background: #ffc400;
+}
+
+.secondary {
+    background: #d32f2f;
+    color: white;
+}
+
+.secondary:hover {
+    background: #b3b3b3;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 93%;
+    background: #ffc400;
+    padding: 5px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    z-index: 5;
+    text-align: center;
+}
+
+header h1 {
+    color: #d32f2f;
+    font-size: 28px; 
+}   
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 80px;
+    }
+
+    header {
+        padding: 10px 20px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav {
+        margin-top: 8px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 14px;
     }
 
     .order-wrap {
-      width: 90%;
-      max-width: 750px;
-      margin: 40px auto;
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        padding-top: 75px;
     }
 
-    .order-card h2 {
-      margin-bottom: 15px;
-      text-align: center;
-      color: #d32f2f;
-    }
-
-    .order-input {
-      margin-bottom: 15px;
-    }
-
-    .order-label {
-      display: block;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      font-weight: bold;
+    header h1 {
+        font-size: 20px;
     }
 
     .order-select,
     .order-input input {
-      width: 100%;
-      padding: 10px;
-      border-radius: 7px;
-      border: 1px solid #888;
-      font-size: 15px;
-      margin-bottom: 10px;
-      margin-left: -5px;
+        font-size: 14px;
+        padding: 9px;
     }
 
     .btn-action {
-      padding: 12px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: 0.2s;
-      border: none;
-      width: 100%;
-      margin-top: 10px;
+        font-size: 15px;
+        padding: 10px;
     }
 
-    .primary {
-      background: #d32f2f;
-      color: white;
+    footer {
+        font-size: 14px;
+        padding: 16px;
     }
-
-    .primary:hover {
-      background: #ffc400;
-    }
-
-    .secondary {
-      background: #d32f2f;
-      color: white
-    }
-
-    .secondary:hover {
-      background: #b3b3b3;
-    }
-header {
-        position: fixed;
-        top: 0;
-        width: 93%;
-        background: #ffc400;
-        padding: 5px 60px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: 0.3s;
-        z-index: 5;
-        text-align: center;
-    }
-
-    header h1 {
-        color: #d32f2f;
-        font-size: 28px; 
-    }   
-
-    nav a {
-        margin-left: 20px;
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-    }
-    
-   footer {
-        background-color: #ffcc00;
-        text-align: center;
-        padding:20px;
-        font-weight: bold;
-        color: #333;
-    }
-
-
-
+}
